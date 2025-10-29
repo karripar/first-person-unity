@@ -14,7 +14,7 @@ public class CubeCarry : MonoBehaviour
         // Move cube to a point in front of the camera
         carriedCube.position = Camera.main.transform.position + Camera.main.transform.forward * 1.5f;
         
-        // Optional: make cube face the same way as the camera
+        // make cube face the same way as the camera
         carriedCube.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
     }
 
@@ -31,7 +31,7 @@ public class CubeCarry : MonoBehaviour
 
     void TryPickup()
     {
-        // Ray from camera (so it matches your view)
+        // Ray from camera (matches your view)
         Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         RaycastHit hit;
 
