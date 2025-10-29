@@ -46,7 +46,7 @@ public class CameraController : MonoBehaviour
         float mouseY = lookInput.y * Time.deltaTime * sensitivityY;
 
         yRotation += mouseX;
-        xRotation -= mouseY; // Note the minus — invert Y so it's natural
+        xRotation -= mouseY; // invert Y so it's natural
 
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
