@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 50
   orientation: {fileID: 1224536136}
+  jumpForce: 5
 --- !u!54 &135590631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -382,8 +383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cameraPosition: {fileID: 789190544}
-  sensitivyX: 420
-  sensitivyY: 420
+  sensitivityX: 200
+  sensitivityY: 200
   orientation: {fileID: 1224536136}
 --- !u!1 &410087039
 GameObject:

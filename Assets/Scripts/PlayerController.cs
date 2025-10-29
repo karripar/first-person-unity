@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private float yInput;
     private Vector3 movingDirection;
     private Rigidbody rb;
+    public float jumpForce;
+    private bool isGrounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,13 @@ public class PlayerController : MonoBehaviour
         // Read input (keyboard)
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
+
+        // Jump
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            isGrounded = false;
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
     }
     void FixedUpdate()
     {
@@ -42,4 +51,10 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector3(maxVelocity.x, rb.linearVelocity.y, maxVelocity.z);
         }
     }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        isGrounded = true;
+    }
+
 }
