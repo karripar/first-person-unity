@@ -677,8 +677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   cameraPosition: {fileID: 789190544}
-  sensitivityX: 200
-  sensitivityY: 200
+  sensitivityX: 100
+  sensitivityY: 100
   orientation: {fileID: 1224536136}
 --- !u!1 &410087039
 GameObject:
