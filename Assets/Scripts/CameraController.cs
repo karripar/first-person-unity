@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class CameraController : MonoBehaviour
 {
     public Transform cameraPosition;
-    public float sensitivityX = 200f;
-    public float sensitivityY = 200f;
+    public float sensitivityX = 100f;
+    public float sensitivityY = 100f;
     public Transform orientation;
 
     private float xRotation;

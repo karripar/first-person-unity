@@ -30,6 +30,16 @@ public class PlayerController : MonoBehaviour
         xInput = Input.GetAxisRaw("Horizontal");
         yInput = Input.GetAxisRaw("Vertical");
 
+        // sprint
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 100f;
+        }
+        else
+        {
+            speed = 50f;
+        }
+
         // Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
