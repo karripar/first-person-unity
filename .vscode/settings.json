@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "first-person-unity.slnx"
+    "dotnet.defaultSolution": "First-Person-View.slnx"
 }
